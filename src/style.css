@@ -47,32 +47,39 @@ a:hover {
   max-width: 770px;
   margin: 30px auto;
   padding: 40px;
-
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   color: #878787;
 }
-
-.weather-info {
-  margin-top: 20px;
+.col-6 {
+  max-width: 50%;
 }
 .temperature-container {
   margin-top: 30px;
+  text-align: right;
 }
-.temperature {
+.temperature-container .temperature {
   color: #212121;
-
   margin-left: 10px;
   font-weight: 700;
   font-size: 80px;
   line-height: 1;
 }
-.units {
+.temperature-container .units {
   color: #212121;
   font-size: 28px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -34px;
+}
+.weather-info {
+  margin-top: 20px;
+}
+
+.temperature-container .weather-image {
+  margin-right: 5px;
+  position: relative;
+  top: -20px;
 }
