@@ -83,3 +83,6 @@ a:hover {
   position: relative;
   top: -20px;
 }
+#description {
+  text-transform: capitalize;
+}
