@@ -80,7 +80,7 @@ a:hover {
 }
 
 .temperature-container .weather-image {
-  margin-right: 5px;
+  margin-right: -20px;
   position: relative;
   top: -20px;
 }
