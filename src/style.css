@@ -26,6 +26,7 @@ li strong {
   color: #f65282;
   font-weight: 400;
 }
+
 footer {
   color: #885df1;
   font-size: 14px;
@@ -82,7 +83,4 @@ a:hover {
   margin-right: 5px;
   position: relative;
   top: -20px;
-}
-#description {
-  text-transform: capitalize;
 }
