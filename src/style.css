@@ -56,6 +56,7 @@ a:hover {
 .col-6 {
   max-width: 50%;
 }
+
 .temperature-container {
   margin-top: 30px;
   text-align: right;
@@ -75,12 +76,12 @@ a:hover {
   line-height: 1;
   top: -34px;
 }
-.weather-info {
-  margin-top: 20px;
-}
 
 .temperature-container .weather-image {
   margin-right: -20px;
   position: relative;
   top: -20px;
+}
+.weather-info {
+  margin-top: 20px;
 }
