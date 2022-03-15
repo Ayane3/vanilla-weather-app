@@ -90,3 +90,10 @@ a:hover {
   border-bottom: 1px solid #f9f7fe;
   padding-bottom: 30px;
 }
+.temperature-container .active {
+  color: #212121;
+  cursor: default;
+}
+.temperature-container .active:hover {
+  text-decoration: none;
+}
