@@ -97,3 +97,25 @@ a:hover {
 .temperature-container .active:hover {
   text-decoration: none;
 }
+.weather-forecast {
+  margin: 40px 0;
+  text-align: center;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 50px;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+}
+.weather-forecast-temperatures {
+  font-size: 18px;
+  color: #f65282;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.weather-forecast-temperature-min {
+  margin-left: 10px;
+  opacity: 0.6;
+}
