@@ -90,6 +90,29 @@ a:hover {
   border-bottom: 1px solid #f9f7fe;
   padding-bottom: 30px;
 }
+.weather-app #city-input {
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+.weather-app .btn {
+  background: #885df1;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+}
+.weather-app .btn:hover {
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
 .temperature-container .active {
   color: #212121;
   cursor: default;
