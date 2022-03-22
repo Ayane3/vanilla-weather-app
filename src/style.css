@@ -107,11 +107,11 @@ a:hover {
   padding: 15px 0;
   border: none;
   height: 50px;
+  transition: all 0.15s ease-in-out;
 }
 .weather-app .btn:hover {
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: all 0.15s ease-in-out;
 }
 .temperature-container .active {
   color: #212121;
