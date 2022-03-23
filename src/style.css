@@ -16,7 +16,7 @@ ul {
 li {
   font-weight: 500;
   margin-bottom: 5px;
-  color: rgba(39, 33, 66, 0.4);
+ color: #525252;
   font-size: 16px;
   line-height: 20px;
   list-style: none;
@@ -26,21 +26,32 @@ li strong {
   color: #f65282;
   font-weight: 400;
 }
+a {
+  text-decoration: none;
+}
 
 footer {
   color: #885df1;
   font-size: 14px;
-  margin-top: 40px;
+  margin-top: 14px;
   line-height: 18px;
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: #272142;
 }
 
 .weather-app {
   max-width: 770px;
   margin: 30px auto;
   padding: 40px;
-  background: #fff;
+  background: linear-gradient(
+    89.8deg,
+    rgb(204, 156, 223) 0.3%,
+    rgb(155, 219, 245) 20.4%,
+    rgb(245, 183, 208) 40.2%,
+    rgb(250, 186, 98) 62.9%,
+    rgb(234, 238, 240) 81.9%,
+    rgb(250, 245, 171) 99.2%
+  );
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   color: #878787;
@@ -70,7 +81,7 @@ footer {
 }
 
 .temperature-container .weather-image {
-  margin-right: -20px;
+  margin-right: 5px;
   position: relative;
   top: -20px;
 }
@@ -92,7 +103,7 @@ footer {
   height: 50px;
   line-height: 20px;
 }
-.weather-app .btn {
+.weather-app .search-button {
   background: #885df1;
   font-weight: 700;
   font-size: 16px;
@@ -101,14 +112,23 @@ footer {
   height: 50px;
   transition: all 0.15s ease-in-out;
 }
-.weather-app .btn:hover {
+.weather-app .search-button:hover {
   line-height: 1.5;
   border-radius: 0.25rem;
 }
-.temperature-container .active {
-  color: #212121;
-  cursor: default;
+.weather-app .current-button {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+  transition: all 0.15s ease-in-out;
 }
+.weather-app .current-button:hover {
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
 .temperature-container .active:hover {
   text-decoration: none;
 }
@@ -122,7 +142,7 @@ footer {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: #525252;
 }
 .weather-forecast-temperatures {
   font-size: 18px;

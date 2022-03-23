@@ -104,11 +104,27 @@ function search(city) {
   axios.get(apiUrl).then(displayTemperature);
 }
 
+function searchLocation(position) {
+  let apiKey = "b8ca9c74ef5f3c6a38c4feab706452dd";
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
